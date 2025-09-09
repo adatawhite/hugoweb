@@ -45,7 +45,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;7、设置登录失败次数锁定
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;禁用root用户直接ssh登陆&#34;&gt;禁用root用户直接SSH登陆
+&lt;/div&gt;&lt;p&gt;我已将这整篇内容存放至百度网盘，需要的自取即可：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;百度网盘&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;禁用root用户直接ssh登陆&#34;&gt;禁用root用户直接SSH登陆
 &lt;/h2&gt;&lt;p&gt;要设置禁止root用户直接SSH登录，并强制通过指定普通用户跳转到root，请按以下步骤操作：&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;完整配置步骤&#34;&gt;&lt;strong&gt;完整配置步骤&lt;/strong&gt;
