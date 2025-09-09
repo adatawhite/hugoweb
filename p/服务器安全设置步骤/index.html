@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="快速设置服务器安全">
+<title>服务器安全配置重要步骤</title>
+
+<link rel='canonical' href='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/'>
+
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="服务器安全配置重要步骤">
+<meta property='og:description' content="快速设置服务器安全">
+<meta property='og:url' content='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/'>
+<meta property='og:site_name' content='阿呆报告'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png' />
+<meta name="twitter:title" content="服务器安全配置重要步骤">
+<meta name="twitter:description" content="快速设置服务器安全"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_78de74a8203e5d62.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐼</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">阿呆报告</a></h1>
+            <h2 class="site-description">阿呆与你一起学习，一起成长。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://2060.net.cn/wp-content/uploads/2025/04/weixin-lanchongadai.webp'
+                        target="_blank"
+                        title="微信"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0"?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x33_71-wechat"><g><g><path d="M342.248,169.517c8.712,0,17.221,0.724,25.616,1.759C352.687,104.625,282.682,54.21,198.503,54.21     c-95.28,0-172.502,64.541-172.502,144.134c0,45.889,25.819,86.602,65.866,112.945l-22.742,45.605l61.953-26.608     c13.285,4.731,27.09,8.627,41.835,10.44c-2.015-8.796-3.16-17.813-3.16-27.068C169.753,234.178,247.115,169.517,342.248,169.517z      M256.003,119.066c11.905,0,21.56,9.685,21.56,21.623c0,11.942-9.654,21.62-21.56,21.62c-11.912,0-21.563-9.678-21.563-21.62     C234.44,128.75,244.091,119.066,256.003,119.066z M141.001,162.309c-11.907,0-21.562-9.678-21.562-21.62     c0-11.938,9.656-21.623,21.562-21.623s21.563,9.685,21.563,21.623C162.563,152.631,152.906,162.309,141.001,162.309z" style="fill:#51C332;"/><path d="M485.999,313.656c0-63.684-64.376-115.312-143.751-115.312     c-79.378,0-143.745,51.628-143.745,115.312c0,63.679,64.367,115.308,143.745,115.308c13.054,0,25.471-1.845,37.519-4.465     l77.483,33.291l-26.798-53.701C464.035,382.983,485.999,350.527,485.999,313.656z M299.125,306.448     c-11.906,0-21.563-9.681-21.563-21.625c0-11.938,9.656-21.616,21.563-21.616c11.91,0,21.561,9.682,21.561,21.616     C320.686,296.768,311.033,306.448,299.125,306.448z M385.373,306.448c-11.912,0-21.561-9.681-21.561-21.625     c0-11.938,9.648-21.616,21.561-21.616c11.911,0,21.563,9.682,21.563,21.616C406.936,296.768,397.284,306.448,385.373,306.448z" style="fill:#51C332;"/></g></g></g><g id="Layer_1"/></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E8%BF%9E%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情连接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#禁用root用户直接ssh登陆">禁用root用户直接SSH登陆</a>
+      <ol>
+        <li><a href="#完整配置步骤"><strong>完整配置步骤</strong></a>
+          <ol>
+            <li><a href="#1-创建管理员用户如果还没有"><strong>1. 创建管理员用户（如果还没有）</strong></a></li>
+            <li><a href="#2-配置ssh禁止root登录"><strong>2. 配置SSH禁止root登录</strong></a></li>
+            <li><a href="#3-配置sudo权限关键步骤"><strong>3. 配置sudo权限（关键步骤）</strong></a></li>
+            <li><a href="#4-重启ssh服务"><strong>4. 重启SSH服务</strong></a></li>
+            <li><a href="#5-测试配置重要"><strong>5. 测试配置（重要！）</strong></a></li>
+          </ol>
+        </li>
+        <li><a href="#安全增强建议"><strong>安全增强建议</strong></a>
+          <ol>
+            <li><a href="#1-禁用密码认证使用ssh密钥"><strong>1. 禁用密码认证，使用SSH密钥</strong></a></li>
+            <li><a href="#2-限制ssh登录ip可选"><strong>2. 限制SSH登录IP（可选）</strong></a></li>
+            <li><a href="#3--设置登录失败锁定"><strong>3.  设置登录失败锁定</strong></a></li>
+          </ol>
+        </li>
+        <li><a href="#验证配置"><strong>验证配置</strong></a></li>
+        <li><a href="#故障排除"><strong>故障排除</strong></a></li>
+        <li><a href="#最终安全配置示例"><strong>最终安全配置示例</strong></a></li>
+        <li><a href="#操作后测试清单"><strong>操作后测试清单</strong></a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/">
+                <img src="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_98a3f340853194c.png"
+                        srcset="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_98a3f340853194c.png 800w, /p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_e91805c1ab87f3e.png 1600w"
+                        width="800" 
+                        height="800" 
+                        loading="lazy"
+                        alt="Featured image of post 服务器安全配置重要步骤" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ip%E7%AB%AF%E5%8F%A3/" >
+                IP端口
+            </a>
+        
+            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" >
+                服务器
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/">服务器安全配置重要步骤</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            快速设置服务器安全
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-09-05</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="服务器安全配置重要步骤">服务器安全配置重要步骤
+</h1><p>如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；</p>
+<p>如果你是刚接触服务器，或者是刚做网站的小白，我希望你先看完前面这段话，不会浪费很多时间，应该会对你有所启发：</p>
+<p>首先你需要了解，为什么要修改这些关键的服务器安全配置？</p>
+<p>因为，当用户拿到root权限就可以访问与修改你服务器中任何内容，因此，可以做一些必要的设施，哪怕有其他人拿到了你服务器的root权限，也不能直接使用。</p>
+<p>你现在可能会感觉我的服务器没什么问题，谁会闲着没事攻击我？</p>
+<p>我能告诉你的就是，没有不可能，只有你想不到，这些都只能在你有一次被黑的经历后才会意识到安全的重要性，</p>
+<p>当然，我希望你永远都不会遇到。</p>
+<p>写给做博客网站小伙伴们的忠告：wordpress功能非常强大，但却非常臃肿，各种插件与系统更新维护将是你未来很大的一个问题，因此，如果你只是做个人博客，那么，我非常建议你了解一下hugo。</p>
+<p>接下来我会将我做的一些安全设置总结分享给你，希望对你有所帮助！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">下面的安全设置主要包括：
+</span></span><span class="line"><span class="cl">1、修改服务器SSH端口号；
+</span></span><span class="line"><span class="cl">2、创建非root用户，设置管理员权限；
+</span></span><span class="line"><span class="cl">3、指定某一特定用户可切换到root用户，其他用户不可切换到root，且切换到root用户时必须要使用密码；
+</span></span><span class="line"><span class="cl">4、禁用root用户直接使用SSH方式登录；
+</span></span><span class="line"><span class="cl">5、（可选）根据自己选择，可设置密钥登录或者密码登录；
+</span></span><span class="line"><span class="cl">6、（可选）如果有固定IP，可以设置只有在指定IP才可以登录；
+</span></span><span class="line"><span class="cl">7、设置登录失败次数锁定
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="禁用root用户直接ssh登陆">禁用root用户直接SSH登陆
+</h2><p>要设置禁止root用户直接SSH登录，并强制通过指定普通用户跳转到root，请按以下步骤操作：</p>
+<hr>
+<h3 id="完整配置步骤"><strong>完整配置步骤</strong>
+</h3><h4 id="1-创建管理员用户如果还没有"><strong>1. 创建管理员用户（如果还没有）</strong>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建新用户（例如：newrtad，不建议使用admin等类似英语单词）</span>
+</span></span><span class="line"><span class="cl">sudo adduser newrtad
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置密码（需要输入两次）</span>
+</span></span><span class="line"><span class="cl">sudo passwd &lt;建议英文大写小子字母+特殊字符+数字组合，长度至少不要低于8位&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 将用户添加到sudo组（Ubuntu/Debian）</span>
+</span></span><span class="line"><span class="cl">sudo usermod -aG sudo newrtad
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># CentOS/RHEL系统使用wheel组</span>
+</span></span><span class="line"><span class="cl">sudo usermod -aG wheel newrtad
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2-配置ssh禁止root登录"><strong>2. 配置SSH禁止root登录</strong>
+</h4><p>编辑SSH配置文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/ssh/sshd_config  <span class="c1">#如果命令失败，则检查服务器中是否有nano工具，如果没有则安装一下，也可以使用vim</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改或添加以下配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># 修改SSH端口号(修改一个高位端口，然后测试使用新端口打开一个新的SSH窗口看能否正常链接，原端口先不要关，测试无问题后)</span>
+</span></span><span class="line"><span class="cl"><span class="na">port 51289</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 禁止root直接登录</span>
+</span></span><span class="line"><span class="cl"><span class="na">PermitRootLogin no</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 允许密码认证（如果使用密钥登录可设为no）</span>
+</span></span><span class="line"><span class="cl"><span class="na">PasswordAuthentication yes</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 只允许指定用户登录（可选但推荐）</span>
+</span></span><span class="line"><span class="cl"><span class="na">AllowUsers newrtad</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nano保存及退出命令：
+</span></span><span class="line"><span class="cl">保存：Ctrl+O
+</span></span><span class="line"><span class="cl">退出：Ctrl+X
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>重要提醒</strong>：</p>
+<ul>
+<li>修改SSH配置前<strong>务必保留一个root会话不退出</strong></li>
+<li>测试新配置<strong>成功后再关闭所有root会话</strong></li>
+<li>建议先在测试环境验证配置</li>
+</ul></blockquote>
+<h4 id="3-配置sudo权限关键步骤"><strong>3. 配置sudo权限（关键步骤）</strong>
+</h4><p>确保普通用户可以切换到root：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 编辑sudoers文件（安全操作）</span>
+</span></span><span class="line"><span class="cl">sudo visudo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件末尾添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># 允许nertad用户无密码切换到root（可选，建议选下面需要输入密码的方式）</span>
+</span></span><span class="line"><span class="cl"><span class="na">newrtad ALL</span><span class="o">=</span><span class="s">(ALL) NOPASSWD: ALL</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者要求输入密码（更安全）</span>
+</span></span><span class="line"><span class="cl"><span class="na">newrtad ALL</span><span class="o">=</span><span class="s">(ALL) ALL</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="4-重启ssh服务"><strong>4. 重启SSH服务</strong>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Ubuntu/Debian</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart sshd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># CentOS/RHEL</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart sshd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="5-测试配置重要"><strong>5. 测试配置（重要！）</strong>
+</h4><p><strong>不要关闭当前root会话</strong>，新开终端测试该用户是否能正常切换到root用户下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1. 用newrtad用户登录</span>
+</span></span><span class="line"><span class="cl">ssh newrtad@your_server_ip
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 切换到root（两种方式）</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 方式1：使用sudo（推荐）</span>
+</span></span><span class="line"><span class="cl">sudo su -
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 方式2：使用su（需要root密码）</span>
+</span></span><span class="line"><span class="cl">su -
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="安全增强建议"><strong>安全增强建议</strong>
+</h3><h4 id="1-禁用密码认证使用ssh密钥"><strong>1. 禁用密码认证，使用SSH密钥</strong>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 在本地生成密钥（如果还没有）</span>
+</span></span><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 复制公钥到服务器</span>
+</span></span><span class="line"><span class="cl">ssh-copy-id admin@your_server_ip
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改SSH配置</span>
+</span></span><span class="line"><span class="cl">sudo nano /etc/ssh/sshd_config
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">PasswordAuthentication no</span>
+</span></span><span class="line"><span class="cl"><span class="na">PubkeyAuthentication yes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2-限制ssh登录ip可选"><strong>2. 限制SSH登录IP（可选）</strong>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/hosts.allow
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">sshd: 192.168.1.0/24, your_trusted_ip</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3--设置登录失败锁定"><strong>3.  设置登录失败锁定</strong>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/pam.d/sshd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件开头添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">auth required pam_tally2.so deny</span><span class="o">=</span><span class="s">3 unlock_time=600 onerr=fail</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="验证配置"><strong>验证配置</strong>
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1. 检查SSH配置语法</span>
+</span></span><span class="line"><span class="cl">sudo sshd -t
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 检查sudo权限</span>
+</span></span><span class="line"><span class="cl">sudo -l -U newrtad
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 检查SSH服务状态</span>
+</span></span><span class="line"><span class="cl">sudo systemctl status sshd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="故障排除"><strong>故障排除</strong>
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>问题现象</th>
+          <th>解决方案</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>无法用newrtad登录</td>
+          <td>检查<code>/etc/ssh/sshd_config</code>中的<code>AllowUsers</code></td>
+      </tr>
+      <tr>
+          <td>无法切换到root</td>
+          <td>检查<code>/etc/sudoers</code>中的权限配置</td>
+      </tr>
+      <tr>
+          <td>SSH连接被拒绝</td>
+          <td>检查防火墙：<code>sudo ufw status</code></td>
+      </tr>
+      <tr>
+          <td>密码认证失败</td>
+          <td>确认<code>PasswordAuthentication yes</code></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h3 id="最终安全配置示例"><strong>最终安全配置示例</strong>
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># /etc/ssh/sshd_config</span>
+</span></span><span class="line"><span class="cl"><span class="na">Port 51289</span>
+</span></span><span class="line"><span class="cl"><span class="na">PermitRootLogin no</span>
+</span></span><span class="line"><span class="cl"><span class="na">PasswordAuthentication no</span>
+</span></span><span class="line"><span class="cl"><span class="na">PubkeyAuthentication yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">AllowUsers newrtad</span>
+</span></span><span class="line"><span class="cl"><span class="na">MaxAuthTries 3</span>
+</span></span><span class="line"><span class="cl"><span class="na">LoginGraceTime 60</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># /etc/sudoers</span>
+</span></span><span class="line"><span class="cl"><span class="na">admin ALL</span><span class="o">=</span><span class="s">(ALL) PASSWD: ALL</span>
+</span></span><span class="line"><span class="cl"><span class="na">Defaults:admin !requiretty</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="操作后测试清单"><strong>操作后测试清单</strong>
+</h3><ol>
+<li>✅ 用newrtad用户SSH登录成功</li>
+<li>✅ <code>sudo su -</code> 切换到root成功</li>
+<li>✅ root直接SSH登录被拒绝</li>
+<li>✅ 其他用户SSH登录被拒绝（如果设置了AllowUsers）</li>
+<li>✅ SSH密钥认证正常工作（如果配置了）</li>
+</ol>
+<blockquote>
+<p><strong>重要提醒</strong>：</p>
+<ul>
+<li>修改SSH配置前<strong>务必保留一个root会话不退出</strong></li>
+<li>测试新配置<strong>成功后再关闭所有root会话</strong></li>
+<li>建议先在测试环境验证配置</li>
+<li>定期备份SSH配置：<code>sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak</code></li>
+<li></li>
+</ul></blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 阿呆
+    </section>
+    
+    <section class="powerby">
+        
+            个人博客 <br/>
+        
+
+        
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
