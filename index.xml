@@ -14,7 +14,9 @@
         
         <guid>https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</guid>
         <description>&lt;img src="https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png" alt="Featured image of post 服务器安全配置重要步骤" /&gt;&lt;h1 id=&#34;服务器安全配置重要步骤&#34;&gt;服务器安全配置重要步骤
-&lt;/h1&gt;&lt;p&gt;如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；&lt;/p&gt;
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;服务器安全不容忽视，一旦被黑，后果不堪设想。了解并实施这些关键的安全配置，哪怕有人拿到了你的root权限，也能有效防止他们为所欲为。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；&lt;/p&gt;
 &lt;p&gt;如果你是刚接触服务器，或者是刚做网站的小白，我希望你先看完前面这段话，不会浪费很多时间，应该会对你有所启发：&lt;/p&gt;
 &lt;p&gt;首先你需要了解，为什么要修改这些关键的服务器安全配置？&lt;/p&gt;
 &lt;p&gt;因为，当用户拿到root权限就可以访问与修改你服务器中任何内容，因此，可以做一些必要的设施，哪怕有其他人拿到了你服务器的root权限，也不能直接使用。&lt;/p&gt;
@@ -45,8 +47,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;7、设置登录失败次数锁定
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;我已将这整篇内容存放至百度网盘，需要的自取即可：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;百度网盘&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;我已将这整篇内容放在这里，需要的可自行下载：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;禁用root用户直接ssh登陆&#34;&gt;禁用root用户直接SSH登陆
 &lt;/h2&gt;&lt;p&gt;要设置禁止root用户直接SSH登录，并强制通过指定普通用户跳转到root，请按以下步骤操作：&lt;/p&gt;
 &lt;hr&gt;
@@ -386,7 +388,6 @@
 &lt;li&gt;测试新配置&lt;strong&gt;成功后再关闭所有root会话&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;建议先在测试环境验证配置&lt;/li&gt;
 &lt;li&gt;定期备份SSH配置：&lt;code&gt;sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 </description>
         </item>

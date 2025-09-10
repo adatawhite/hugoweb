@@ -326,7 +326,9 @@
     
     
     <h1 id="服务器安全配置重要步骤">服务器安全配置重要步骤
-</h1><p>如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；</p>
+</h1><blockquote>
+<p>服务器安全不容忽视，一旦被黑，后果不堪设想。了解并实施这些关键的安全配置，哪怕有人拿到了你的root权限，也能有效防止他们为所欲为。</p></blockquote>
+<p>如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；</p>
 <p>如果你是刚接触服务器，或者是刚做网站的小白，我希望你先看完前面这段话，不会浪费很多时间，应该会对你有所启发：</p>
 <p>首先你需要了解，为什么要修改这些关键的服务器安全配置？</p>
 <p>因为，当用户拿到root权限就可以访问与修改你服务器中任何内容，因此，可以做一些必要的设施，哪怕有其他人拿到了你服务器的root权限，也不能直接使用。</p>
@@ -357,8 +359,8 @@
 </span></span><span class="line"><span class="cl">7、设置登录失败次数锁定
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>我已将这整篇内容存放至百度网盘，需要的自取即可：<a class="link" href="https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1"  target="_blank" rel="noopener"
-    >百度网盘</a></p>
+</div><p><strong>我已将这整篇内容放在这里，需要的可自行下载：<a class="link" href="https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1"  target="_blank" rel="noopener"
+    >下载</a></strong></p>
 <h2 id="禁用root用户直接ssh登陆">禁用root用户直接SSH登陆
 </h2><p>要设置禁止root用户直接SSH登录，并强制通过指定普通用户跳转到root，请按以下步骤操作：</p>
 <hr>
@@ -698,7 +700,6 @@
 <li>测试新配置<strong>成功后再关闭所有root会话</strong></li>
 <li>建议先在测试环境验证配置</li>
 <li>定期备份SSH配置：<code>sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak</code></li>
-<li></li>
 </ul></blockquote>
 
 </section>
