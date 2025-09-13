@@ -7,7 +7,59 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-        <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>轻松识字，快乐成长！让孩子爱上学习！</title>
+        <link>https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/</link>
+        <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/</guid>
+        <description>&lt;img src="https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97.png" alt="Featured image of post 轻松识字，快乐成长！让孩子爱上学习！" /&gt;&lt;h1 id=&#34;儿童趣味识字&#34;&gt;儿童趣味识字
+&lt;/h1&gt;&lt;p&gt;对于我们做家长的来说，孩子当前的学习情况如何，知识量到底掌握了多少，这都是我们最关心的问题，&lt;/p&gt;
+&lt;p&gt;但很多情况下我们没有办法自定义测试孩子对知识的掌握情况，&lt;/p&gt;
+&lt;p&gt;我家小孩7岁，现在刚上大班，为了测试他认识了多少汉字，又防止他反感，于是我就做了这么一个html格式的应用，便于我测试他对汉字的掌握情况，&lt;/p&gt;
+&lt;p&gt;当做完这个工具后，我发现，其实放在其他学科，这些也是可以通用的，只需要替换题库的内容即可：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;功能一多学科适用&#34;&gt;功能一：多学科适用
+&lt;/h2&gt;&lt;p&gt;无论是测试汉字，还是英语单词，又或者是数学题，只需要替换数据文件即可（具体的使用教程我同文件放在了一起，需要的自行获取【&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1iz_jtMgsnDJi2tADAyWaLg?pwd=5as6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;strong&gt;百度网盘&lt;/strong&gt;&lt;/a&gt;】）&lt;/p&gt;
+&lt;img src=&#34;index.zh-cn.assets/英语单词测试.png&#34; alt=&#34;英语单词测试&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;【真实效果】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我家孩子刚学完拼音和简单汉字，就是用它检测，等后面英语单词学起来，把题库换成英语单词，照样能测；数学题也适用，一物多用。&lt;/p&gt;
+&lt;img src=&#34;index.zh-cn.assets/乘法口诀测试.png&#34; alt=&#34;乘法口诀测试&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;功能二自定题库&#34;&gt;功能二：自定题库
+&lt;/h2&gt;&lt;p&gt;可以根据孩子的教材和学习进度，自定义题库，测试内容完全贴合孩子的实际学习情况。&lt;/p&gt;
+&lt;p&gt;把教材上的生字词、单词或数学公式导入进去，就能针对性地检测学习效果。&lt;/p&gt;
+&lt;p&gt;我把这个工具分享给了我的朋友，朋友的孩子使用这个工具时，她直接把语文课本后生字表导入题库，使用效果也还是很明显的。&lt;/p&gt;
+&lt;img src=&#34;index.zh-cn.assets/汉字测试.png&#34; alt=&#34;汉字测试&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;【使用场景】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每次单元学习结束后，用教材配套的题库进行全面检测，找出薄弱环节，有针对性地强化练习。&lt;/p&gt;
+&lt;h2 id=&#34;功能三简单易用&#34;&gt;功能三：简单易用
+&lt;/h2&gt;&lt;p&gt;这个界面操作非常简单，只需要准备一个Excel表格，导入题目，就能开始测试。&lt;/p&gt;
+&lt;p&gt;任何家长都能轻松上手，界面友好，孩子操作起来也很简单。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/index.zh-cn.assets/image-20250913224207467.png&#34;
+	width=&#34;832&#34;
+	height=&#34;529&#34;
+	srcset=&#34;https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/index.zh-cn.assets/image-20250913224207467_hu_96d9f4ff74e8b3d.png 480w, https://adatawhite.github.io/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/index.zh-cn.assets/image-20250913224207467_hu_ab190e635b3430de.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250913224207467&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;157&#34;
+		data-flex-basis=&#34;377px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在平时的家庭作业辅导前，先用这个工具做个小测试，找准孩子的“知识缺口”，再针对性地进行辅导，事半功倍。&lt;/p&gt;
+&lt;p&gt;每次看到孩子因为精准复习而进步，那种成就感是无法替代的。&lt;/p&gt;
+&lt;p&gt;了解孩子真正掌握了什么，没掌握什么，才是辅导的第一步。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你也有需要，不妨试一试，这个是完全免费的，希望对大家有所帮助~&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我已经将工具放在这里，需要的自行获取：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1iz_jtMgsnDJi2tADAyWaLg?pwd=5as6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;strong&gt;百度网盘&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>服务器安全配置重要步骤</title>
         <link>https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
