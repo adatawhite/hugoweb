@@ -3,15 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://adatawhite.github.io/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adatawhite.github.io/post/</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adatawhite.github.io/categories/</loc>
     <lastmod>2025-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adatawhite.github.io/categories/ip%E7%AB%AF%E5%8F%A3/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://adatawhite.github.io/post/</loc>
     <lastmod>2025-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adatawhite.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
@@ -27,6 +27,8 @@
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adatawhite.github.io/tags/</loc>
+  </url><url>
+    <loc>https://adatawhite.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
   </url><url>
     <loc>https://adatawhite.github.io/search/</loc>
   </url>

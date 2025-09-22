@@ -373,8 +373,8 @@
 </span></span><span class="line"><span class="cl">7、设置登录失败次数锁定
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>我已将这整篇内容放在这里，需要的可自行下载：<a class="link" href="https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1"  target="_blank" rel="noopener"
-    >下载</a></strong></p>
+</div><p><strong>我已将整篇内容放在这里，需要的可自行下载：<a class="link" href="https://pan.baidu.com/s/1Xt0qqNbtd5AL17s4DNEsSw?pwd=wyu1"  target="_blank" rel="noopener"
+    >百度网盘</a></strong></p>
 <h2 id="禁用root用户直接ssh登陆">禁用root用户直接SSH登陆
 </h2><p>要设置禁止root用户直接SSH登录，并强制通过指定普通用户跳转到root，请按以下步骤操作：</p>
 <hr>
@@ -666,14 +666,16 @@
 <h3 id="最终安全配置示例"><strong>最终安全配置示例</strong>
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># /etc/ssh/sshd_config</span>
@@ -684,6 +686,8 @@
 </span></span><span class="line"><span class="cl"><span class="na">AllowUsers newrtad</span>
 </span></span><span class="line"><span class="cl"><span class="na">MaxAuthTries 3</span>
 </span></span><span class="line"><span class="cl"><span class="na">LoginGraceTime 60</span>
+</span></span><span class="line"><span class="cl"><span class="na">ClientAliveInterval 600</span>
+</span></span><span class="line"><span class="cl"><span class="na">ClientAliveCountMax 3</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
