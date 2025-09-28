@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-        <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Python</title>
+        <link>https://adatawhite.github.io/categories/python/</link>
+        <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://adatawhite.github.io/categories/python/</guid>
+        <description>&lt;img src="https://adatawhite.github.io/categories/python/image.png" alt="Featured image of post Python" /&gt;</description>
+        </item>
+        <item>
         <title>应用类</title>
         <link>https://adatawhite.github.io/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/</link>
         <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
