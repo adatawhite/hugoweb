@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="服务器安全配置重要步骤">
+<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="服务器安全配置重要步骤">
 <meta property='og:description' content="快速设置服务器安全">
 <meta property='og:url' content='https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/'>
 <meta property='og:site_name' content='阿呆报告'>
@@ -255,10 +255,10 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/">
-                <img src="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_98a3f340853194c.png"
-                        srcset="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_98a3f340853194c.png 800w, /p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_e91805c1ab87f3e.png 1600w"
+                <img src="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_4e094d2826e872a5.png"
+                        srcset="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_4e094d2826e872a5.png 800w, /p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image_hu_b559009b7ac72ac3.png 1600w"
                         width="800" 
-                        height="800" 
+                        height="362" 
                         loading="lazy"
                         alt="Featured image of post 服务器安全配置重要步骤" />
                 
@@ -666,16 +666,14 @@
 <h3 id="最终安全配置示例"><strong>最终安全配置示例</strong>
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># /etc/ssh/sshd_config</span>
@@ -686,8 +684,6 @@
 </span></span><span class="line"><span class="cl"><span class="na">AllowUsers newrtad</span>
 </span></span><span class="line"><span class="cl"><span class="na">MaxAuthTries 3</span>
 </span></span><span class="line"><span class="cl"><span class="na">LoginGraceTime 60</span>
-</span></span><span class="line"><span class="cl"><span class="na">ClientAliveInterval 600</span>
-</span></span><span class="line"><span class="cl"><span class="na">ClientAliveCountMax 3</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -698,8 +694,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># /etc/sudoers</span>
-</span></span><span class="line"><span class="cl"><span class="na">admin ALL</span><span class="o">=</span><span class="s">(ALL) PASSWD: ALL</span>
-</span></span><span class="line"><span class="cl"><span class="na">Defaults:admin !requiretty</span>
+</span></span><span class="line"><span class="cl"><span class="na">newrtad ALL</span><span class="o">=</span><span class="s">(ALL) PASSWD: ALL</span>
+</span></span><span class="line"><span class="cl"><span class="na">Defaults:newrtad !requiretty</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
