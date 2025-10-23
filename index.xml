@@ -7,7 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-        <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Win11开启Linux子系统教程</title>
+        <link>https://adatawhite.github.io/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://adatawhite.github.io/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;img src="https://adatawhite.github.io/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image.png" alt="Featured image of post Win11开启Linux子系统教程" /&gt;&lt;h1 id=&#34;&#34;&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;一开启子系统前先检查&#34;&gt;一、开启子系统前先检查：
+&lt;/h2&gt;&lt;p&gt;按win+R键，输入optionalfeatures，然后回车；&lt;/p&gt;
+&lt;p&gt;找到“&lt;strong&gt;适用于Linux的Windows子系统&lt;/strong&gt;”和“&lt;strong&gt;虚拟机平台（也可能叫虚拟机监控程序平台）&lt;/strong&gt;”，这两项必须勾选，这里如果有修改，必须确定后重启电脑。&lt;/p&gt;
+&lt;h2 id=&#34;二开启流程&#34;&gt;二、开启流程
+&lt;/h2&gt;&lt;p&gt;以管理员身份，打开Windows PowerShell，&lt;/p&gt;
+&lt;p&gt;1、运行“dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart”启动适用于Linux的windows子系统；&lt;/p&gt;
+&lt;p&gt;2、运行指令“wsl -l -v”，检查是否有之前安装的linux（可忽略）；&lt;/p&gt;
+&lt;p&gt;3、运行“wsl &amp;ndash;install” ，该命令会默认安装最新版的ubuntu系统，如果要更换系统，可以运行“wsl &amp;ndash;list &amp;ndash;online”查看当前有哪些系统可以安装，然后运行“wsl &amp;ndash;install -d &amp;lt;要安装的系统名称&amp;gt;”，例如“wsl &amp;ndash;install -d Ubuntu-24.04”等待安装完成即可，如果在操作过程中遇到其他问题，也可以参考：&lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/zh-cn/windows/wsl/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;安装 WSL | Microsoft Learn&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三异常&#34;&gt;三、异常
+&lt;/h2&gt;&lt;p&gt;如果安装过程中安装错误，需要重新安装，可以执行“wsl &amp;ndash;unregister Ubuntu”，如果提示不存在，也没关系，继续下一步即可。&lt;/p&gt;
+&lt;h2 id=&#34;四登录&#34;&gt;四、登录
+&lt;/h2&gt;&lt;p&gt;经过上述步骤，90%应该可以正确安装，然后在弹出的输入账号和密码处输入账号和密码，注意他会给你一个默认账户名称，记得自己删除后修改，另外，在输入密码时，同在Linux中一样，不会提示输入的密码字符。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Anaconda安装说明</title>
         <link>https://adatawhite.github.io/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</link>
         <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
