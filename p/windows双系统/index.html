@@ -216,10 +216,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#一开启子系统前先检查">一、开启子系统前先检查：</a></li>
-    <li><a href="#二开启流程">二、开启流程</a></li>
-    <li><a href="#三异常">三、异常</a></li>
-    <li><a href="#四登录">四、登录</a></li>
+    <li><a href="#一开启前的准备检查-">一、开启前的准备检查 ✅</a></li>
+    <li><a href="#二开启-wsl-的完整流程-">二、开启 WSL 的完整流程 🪄</a></li>
+    <li><a href="#三常见异常与重装方法-">三、常见异常与重装方法 🧯</a></li>
+    <li><a href="#四首次登录设置-">四、首次登录设置 👤</a></li>
   </ol>
 </nav>
         </div>
@@ -235,10 +235,10 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/">
-                <img src="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_78249d1aa4f3ad73.png"
-                        srcset="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_78249d1aa4f3ad73.png 800w, /p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_759079491fa05ee4.png 1600w"
+                <img src="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_aeb5ac7af307d621.png"
+                        srcset="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_aeb5ac7af307d621.png 800w, /p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image_hu_5f07afa5f71999ad.png 1600w"
                         width="800" 
-                        height="800" 
+                        height="450" 
                         loading="lazy"
                         alt="Featured image of post Win11开启Linux子系统教程" />
                 
@@ -250,8 +250,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/linux%E5%AD%90%E7%B3%BB%E7%BB%9F/" >
-                Linux子系统
+            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="background-color: #2a9d8f; color: #fff;">
+                服务器
             </a>
         
     </header>
@@ -315,20 +315,129 @@
     <section class="article-content">
     
     
-    <h1 id="">
-</h1><h2 id="一开启子系统前先检查">一、开启子系统前先检查：
-</h2><p>按win+R键，输入optionalfeatures，然后回车；</p>
-<p>找到“<strong>适用于Linux的Windows子系统</strong>”和“<strong>虚拟机平台（也可能叫虚拟机监控程序平台）</strong>”，这两项必须勾选，这里如果有修改，必须确定后重启电脑。</p>
-<h2 id="二开启流程">二、开启流程
-</h2><p>以管理员身份，打开Windows PowerShell，</p>
-<p>1、运行“dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart”启动适用于Linux的windows子系统；</p>
-<p>2、运行指令“wsl -l -v”，检查是否有之前安装的linux（可忽略）；</p>
-<p>3、运行“wsl &ndash;install” ，该命令会默认安装最新版的ubuntu系统，如果要更换系统，可以运行“wsl &ndash;list &ndash;online”查看当前有哪些系统可以安装，然后运行“wsl &ndash;install -d &lt;要安装的系统名称&gt;”，例如“wsl &ndash;install -d Ubuntu-24.04”等待安装完成即可，如果在操作过程中遇到其他问题，也可以参考：<a class="link" href="https://learn.microsoft.com/zh-cn/windows/wsl/install"  target="_blank" rel="noopener"
-    >安装 WSL | Microsoft Learn</a></p>
-<h2 id="三异常">三、异常
-</h2><p>如果安装过程中安装错误，需要重新安装，可以执行“wsl &ndash;unregister Ubuntu”，如果提示不存在，也没关系，继续下一步即可。</p>
-<h2 id="四登录">四、登录
-</h2><p>经过上述步骤，90%应该可以正确安装，然后在弹出的输入账号和密码处输入账号和密码，注意他会给你一个默认账户名称，记得自己删除后修改，另外，在输入密码时，同在Linux中一样，不会提示输入的密码字符。</p>
+    <h1 id="-windows-开启-linux-子系统wsl详细指南">🧩 Windows 开启 Linux 子系统（WSL）详细指南
+</h1><p>很多小伙伴在 Windows 上想体验 Linux 环境，最方便的方式就是通过 <strong>WSL（Windows Subsystem for Linux）</strong>。下面带你一步步完成开启与安装。</p>
+<hr>
+<h2 id="一开启前的准备检查-">一、开启前的准备检查 ✅
+</h2><p>1️⃣ 按下 <strong><code>Win + R</code></strong> 键，输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">optionalfeatures
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后回车。</p>
+<p>2️⃣ 在弹出的 “Windows 功能” 窗口中，勾选以下两项：</p>
+<p><img src="https://files.mdnice.com/user/120831/54069c94-821d-40cb-bc27-fc69b627f5c2.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ul>
+<li>✅ <strong>适用于 Linux 的 Windows 子系统</strong></li>
+<li>✅ <strong>虚拟机平台</strong>（有时显示为 “虚拟机监控程序平台”）</li>
+</ul>
+<blockquote>
+<p>⚠️ 如果此处有修改，点击【确定】后务必<strong>重启电脑</strong>才能生效。</p></blockquote>
+<hr>
+<h2 id="二开启-wsl-的完整流程-">二、开启 WSL 的完整流程 🪄
+</h2><p>1️⃣ <strong>以管理员身份打开 PowerShell</strong>（右键「开始菜单」 → 「Windows PowerShell（管理员）」）</p>
+<p>2️⃣ <strong>启用 WSL 功能</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3️⃣ <strong>查看是否已有安装的 Linux 系统</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wsl -l -v
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>（如果没有显示内容，说明尚未安装，可忽略）</p></blockquote>
+<p>4️⃣ <strong>安装 WSL 与 Linux 系统</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wsl --install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>该命令将默认安装最新版 <strong>Ubuntu</strong>。
+如果想安装其他系统，可以先查看可选列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wsl --list --online
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再执行安装命令，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wsl --install -d Ubuntu-24.04
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>📘 若安装过程中遇到问题，可参考微软官方文档：
+<a class="link" href="https://learn.microsoft.com/zh-cn/windows/wsl/install"  target="_blank" rel="noopener"
+    >安装 WSL | Microsoft Learn</a></p></blockquote>
+<hr>
+<h2 id="三常见异常与重装方法-">三、常见异常与重装方法 🧯
+</h2><p>若安装失败或系统损坏，可通过以下命令卸载并重装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wsl --unregister Ubuntu
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>若提示系统不存在也没关系，继续重新安装即可。</p></blockquote>
+<hr>
+<h2 id="四首次登录设置-">四、首次登录设置 👤
+</h2><p>安装完成后，系统会自动打开 Linux 终端窗口。</p>
+<p>此时需要：</p>
+<ul>
+<li>输入一个 <strong>用户名</strong>（可自行修改默认值）</li>
+<li>设置一个 <strong>密码</strong>（⚠️ 注意：输入密码时不会显示字符，这属于正常现象）</li>
+</ul>
+<p>完成后，即可进入 Linux 系统开始使用！</p>
+<hr>
+<p><strong>通过以上步骤，你就可以在 Windows 上愉快地使用 Linux 命令行环境了。
+这不仅能满足开发测试需求，还能让你在同一台电脑上轻松切换 Windows 与 Linux 的世界。</strong></p>
+<p><img src="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203.png"
+	width="1113"
+	height="626"
+	srcset="/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_e1b70871649f6d09.png 480w, /p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_f5f51386785a7e36.png 1024w"
+	loading="lazy"
+	
+		alt="image-20251025232024203"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
 
 </section>
 
@@ -345,6 +454,39 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.c937ee21cd7524db8f9fa0cb2c86455c_hu_9ce20349e84b84ed.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 服务器安全配置重要步骤"
+                        data-key="服务器安全设置步骤" 
+                        data-hash="md5-yTfuIc11JNuPn6DLLIZFXA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">服务器安全配置重要步骤</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     
