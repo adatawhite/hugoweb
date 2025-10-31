@@ -1,1 +1,3 @@
-enableRobotsTXT = true
+User-Agent: *
+Allow: /
+Sitemap: https://adai.2060.net.cn/sitemap.xml

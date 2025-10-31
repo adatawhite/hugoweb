@@ -7,7 +7,6 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-<<<<<<< HEAD
         <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adai.2060.net.cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>服务器</title>
         <link>https://adai.2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
@@ -15,15 +14,6 @@
         
         <guid>https://adai.2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
         <description>&lt;img src="https://adai.2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="Featured image of post 服务器" /&gt;</description>
-=======
-        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>服务器</title>
-        <link>https://adatawhite.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-        <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://adatawhite.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-        <description>&lt;img src="https://adatawhite.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="Featured image of post 服务器" /&gt;</description>
->>>>>>> 31b511e869238dcf0d0f58d224cccd673aa230f6
         </item>
         <item>
         <title>Python</title>
@@ -46,13 +36,8 @@
         <link>https://adai.2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
         
-<<<<<<< HEAD
         <guid>https://adai.2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/</guid>
         <description>&lt;img src="https://adai.2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/IP%E7%AB%AF%E5%8F%A3.png" alt="Featured image of post IP端口" /&gt;</description>
-=======
-        <guid>https://adatawhite.github.io/categories/ip%E7%AB%AF%E5%8F%A3/</guid>
-        <description>&lt;img src="https://adatawhite.github.io/categories/ip%E7%AB%AF%E5%8F%A3/IP%E7%AB%AF%E5%8F%A3.png" alt="Featured image of post IP端口" /&gt;</description>
->>>>>>> 31b511e869238dcf0d0f58d224cccd673aa230f6
         </item>
         <item>
         <title>个人网站搭建</title>
