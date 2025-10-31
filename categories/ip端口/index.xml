@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>IP端口 on 阿呆报告</title>
-        <link>https://adatawhite.github.io/categories/ip%E7%AB%AF%E5%8F%A3/</link>
+        <link>https://adai.2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/</link>
         <description>Recent content in IP端口 on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-        <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adatawhite.github.io/categories/ip%E7%AB%AF%E5%8F%A3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adai.2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>服务器安全配置重要步骤</title>
-        <link>https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</link>
+        <link>https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</guid>
-        <description>&lt;img src="https://adatawhite.github.io/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png" alt="Featured image of post 服务器安全配置重要步骤" /&gt;&lt;h1 id=&#34;服务器安全配置重要步骤&#34;&gt;服务器安全配置重要步骤
+        <guid>https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</guid>
+        <description>&lt;img src="https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png" alt="Featured image of post 服务器安全配置重要步骤" /&gt;&lt;h1 id=&#34;服务器安全配置重要步骤&#34;&gt;服务器安全配置重要步骤
 &lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;服务器安全不容忽视，一旦被黑，后果不堪设想。了解并实施这些关键的安全配置，哪怕有人拿到了你的root权限，也能有效防止他们为所欲为。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；&lt;/p&gt;
