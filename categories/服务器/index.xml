@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>服务器 on 阿呆报告</title>
-        <link>https://adai.2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>https://2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <description>Recent content in 服务器 on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿呆</copyright>
-        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adai.2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Win11开启Linux子系统教程</title>
-        <link>https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</link>
+        <link>https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</link>
         <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</guid>
-        <description>&lt;img src="https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image.png" alt="Featured image of post Win11开启Linux子系统教程" /&gt;&lt;h1 id=&#34;-windows-开启-linux-子系统wsl详细指南&#34;&gt;🧩 Windows 开启 Linux 子系统（WSL）详细指南
+        <guid>https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;img src="https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/image.png" alt="Featured image of post Win11开启Linux子系统教程" /&gt;&lt;h1 id=&#34;-windows-开启-linux-子系统wsl详细指南&#34;&gt;🧩 Windows 开启 Linux 子系统（WSL）详细指南
 &lt;/h1&gt;&lt;p&gt;很多小伙伴在 Windows 上想体验 Linux 环境，最方便的方式就是通过 &lt;strong&gt;WSL（Windows Subsystem for Linux）&lt;/strong&gt;。下面带你一步步完成开启与安装。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;一开启前的准备检查-&#34;&gt;一、开启前的准备检查 ✅
@@ -122,10 +122,10 @@
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;通过以上步骤，你就可以在 Windows 上愉快地使用 Linux 命令行环境了。
 这不仅能满足开发测试需求，还能让你在同一台电脑上轻松切换 Windows 与 Linux 的世界。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203.png&#34;
 	width=&#34;1113&#34;
 	height=&#34;626&#34;
-	srcset=&#34;https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_e1b70871649f6d09.png 480w, https://adai.2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_f5f51386785a7e36.png 1024w&#34;
+	srcset=&#34;https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_e1b70871649f6d09.png 480w, https://2060.net.cn/p/windows%E5%8F%8C%E7%B3%BB%E7%BB%9F/index.zh-cn.assets/image-20251025232024203_hu_f5f51386785a7e36.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image-20251025232024203&#34;
@@ -140,11 +140,11 @@
         </item>
         <item>
         <title>服务器安全配置重要步骤</title>
-        <link>https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</link>
+        <link>https://2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</guid>
-        <description>&lt;img src="https://adai.2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png" alt="Featured image of post 服务器安全配置重要步骤" /&gt;&lt;h1 id=&#34;服务器安全配置重要步骤&#34;&gt;服务器安全配置重要步骤
+        <guid>https://2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/</guid>
+        <description>&lt;img src="https://2060.net.cn/p/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4/image.png" alt="Featured image of post 服务器安全配置重要步骤" /&gt;&lt;h1 id=&#34;服务器安全配置重要步骤&#34;&gt;服务器安全配置重要步骤
 &lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;服务器安全不容忽视，一旦被黑，后果不堪设想。了解并实施这些关键的安全配置，哪怕有人拿到了你的root权限，也能有效防止他们为所欲为。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果你只是来找命令如何使用的，请跳过上面这段内容，直接看下面具体的命令配置即可；&lt;/p&gt;
