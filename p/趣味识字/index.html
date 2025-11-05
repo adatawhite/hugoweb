@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://2060.net.cn/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="轻松识字，快乐成长！让孩子爱上学习！">
+<link rel="stylesheet" href="/scss/style.min.419c990c9e7206efec2e5509c386bb166cfb9d63bf13f12c7ee0b11c09a199db.css"><meta property='og:title' content="轻松识字，快乐成长！让孩子爱上学习！">
 <meta property='og:description' content="这个工具能帮你精准找出孩子真正的学习盲点！无论是汉字、英语单词还是数学题，一个工具全搞定。">
 <meta property='og:url' content='https://2060.net.cn/p/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97/'>
 <meta property='og:site_name' content='阿呆报告'>
@@ -390,8 +390,10 @@
     
     <section class="powerby">
         
-            个人博客 <br/>
+            部分资料来源于网络整理，如有侵权请联系删除 <br/>
         
+
+<div class="running-time">本站已稳定运行：<span id="runningdays"></span></div>
 
         
         
@@ -496,5 +498,37 @@
     }());
 </script>
 
+<script>
+    
+    const startDate = '2025-9-5';
+    
+    const s1 = new Date(startDate.replace(/-/g, "/"));
+
+    
+    function updateRunningTime() {
+        const s2 = new Date(); 
+        const timeDifference = s2.getTime() - s1.getTime(); 
+
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000); 
+
+        
+        const formattedTime = `${days}天 ${String(hours).padStart(2, '0')}小时 ${String(minutes).padStart(2, '0')}分钟 ${String(seconds).padStart(2, '0')}秒`;
+
+        
+        const targetElement = document.getElementById('runningdays');
+        if (targetElement) {
+            targetElement.innerHTML = formattedTime;
+        }
+    }
+
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 1000);
+</script>
     </body>
 </html>

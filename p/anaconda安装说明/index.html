@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://2060.net.cn/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="Anaconda安装说明">
+<link rel="stylesheet" href="/scss/style.min.419c990c9e7206efec2e5509c386bb166cfb9d63bf13f12c7ee0b11c09a199db.css"><meta property='og:title' content="Anaconda安装说明">
 <meta property='og:description' content="使用anaconda快速完成Python安装与管理">
 <meta property='og:url' content='https://2060.net.cn/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/'>
 <meta property='og:site_name' content='阿呆报告'>
@@ -395,8 +395,10 @@
     
     <section class="powerby">
         
-            个人博客 <br/>
+            部分资料来源于网络整理，如有侵权请联系删除 <br/>
         
+
+<div class="running-time">本站已稳定运行：<span id="runningdays"></span></div>
 
         
         
@@ -501,5 +503,37 @@
     }());
 </script>
 
+<script>
+    
+    const startDate = '2025-9-5';
+    
+    const s1 = new Date(startDate.replace(/-/g, "/"));
+
+    
+    function updateRunningTime() {
+        const s2 = new Date(); 
+        const timeDifference = s2.getTime() - s1.getTime(); 
+
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000); 
+
+        
+        const formattedTime = `${days}天 ${String(hours).padStart(2, '0')}小时 ${String(minutes).padStart(2, '0')}分钟 ${String(seconds).padStart(2, '0')}秒`;
+
+        
+        const targetElement = document.getElementById('runningdays');
+        if (targetElement) {
+            targetElement.innerHTML = formattedTime;
+        }
+    }
+
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 1000);
+</script>
     </body>
 </html>

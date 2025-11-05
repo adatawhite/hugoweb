@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://2060.net.cn/archives/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="归档">
+<link rel="stylesheet" href="/scss/style.min.419c990c9e7206efec2e5509c386bb166cfb9d63bf13f12c7ee0b11c09a199db.css"><meta property='og:title' content="归档">
 <meta property='og:description' content="">
 <meta property='og:url' content='https://2060.net.cn/archives/'>
 <meta property='og:site_name' content='阿呆报告'>
@@ -199,6 +199,19 @@
                 
                     
 <article class="">
+    <a href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">网站搭建</h2>
+        </div>
+    </a>
+</article>
+
+                
+                    
+<article class="">
     <a href="/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/">
         
         
@@ -346,6 +359,17 @@
         <div class="article-list--compact">
             
                 <article>
+    <a href="/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/">
+        <div class="article-details">
+            <h2 class="article-title">Hugo页面底栏添加“网站运行时长”stack主题</h2>
+            <footer class="article-time">
+                <time datetime='2025-11-05T00:00:00Z'>2025-11-05</time>
+            </footer>
+        </div>
+    </a>
+</article>
+            
+                <article>
     <a href="/p/%E5%8A%9E%E5%85%AC%E7%94%B5%E8%84%91%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87/">
         <div class="article-details">
             <h2 class="article-title">日常办公必备工具合集</h2>
@@ -449,8 +473,10 @@
     
     <section class="powerby">
         
-            个人博客 <br/>
+            部分资料来源于网络整理，如有侵权请联系删除 <br/>
         
+
+<div class="running-time">本站已稳定运行：<span id="runningdays"></span></div>
 
         
         
@@ -477,5 +503,37 @@
     }());
 </script>
 
+<script>
+    
+    const startDate = '2025-9-5';
+    
+    const s1 = new Date(startDate.replace(/-/g, "/"));
+
+    
+    function updateRunningTime() {
+        const s2 = new Date(); 
+        const timeDifference = s2.getTime() - s1.getTime(); 
+
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000); 
+
+        
+        const formattedTime = `${days}天 ${String(hours).padStart(2, '0')}小时 ${String(minutes).padStart(2, '0')}分钟 ${String(seconds).padStart(2, '0')}秒`;
+
+        
+        const targetElement = document.getElementById('runningdays');
+        if (targetElement) {
+            targetElement.innerHTML = formattedTime;
+        }
+    }
+
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 1000);
+</script>
     </body>
 </html>

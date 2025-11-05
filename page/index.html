@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://2060.net.cn/page/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="Pages">
+<link rel="stylesheet" href="/scss/style.min.419c990c9e7206efec2e5509c386bb166cfb9d63bf13f12c7ee0b11c09a199db.css"><meta property='og:title' content="Pages">
 <meta property='og:description' content="阿呆与你一起学习，一起成长。">
 <meta property='og:url' content='https://2060.net.cn/page/'>
 <meta property='og:site_name' content='阿呆报告'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-11-04T00:00:00&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-11-05T00:00:00&#43;00:00 '/>
 <meta name="twitter:title" content="Pages">
 <meta name="twitter:description" content="阿呆与你一起学习，一起成长。"><link rel="alternate" type="application/rss&#43;xml" href="https://2060.net.cn/page/index.xml">
     </head>
@@ -236,7 +236,7 @@
                     <a href="/archives/#2025">
                         
                             <span class="year">2025</span>
-                            <span class="count">5</span>
+                            <span class="count">6</span>
                         
                     </a> 
                 </div>
@@ -281,6 +281,10 @@
         
             <a href="/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/" class="font_size_1">
                 日常办公工具
+            </a>
+        
+            <a href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" class="font_size_1">
+                网站搭建
             </a>
         
     </div>
@@ -342,8 +346,10 @@
     
     <section class="powerby">
         
-            个人博客 <br/>
+            部分资料来源于网络整理，如有侵权请联系删除 <br/>
         
+
+<div class="running-time">本站已稳定运行：<span id="runningdays"></span></div>
 
         
         
@@ -370,5 +376,37 @@
     }());
 </script>
 
+<script>
+    
+    const startDate = '2025-9-5';
+    
+    const s1 = new Date(startDate.replace(/-/g, "/"));
+
+    
+    function updateRunningTime() {
+        const s2 = new Date(); 
+        const timeDifference = s2.getTime() - s1.getTime(); 
+
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000); 
+
+        
+        const formattedTime = `${days}天 ${String(hours).padStart(2, '0')}小时 ${String(minutes).padStart(2, '0')}分钟 ${String(seconds).padStart(2, '0')}秒`;
+
+        
+        const targetElement = document.getElementById('runningdays');
+        if (targetElement) {
+            targetElement.innerHTML = formattedTime;
+        }
+    }
+
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 1000);
+</script>
     </body>
 </html>
