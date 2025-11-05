@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 阿呆报告</title>
-        <link>https://2060.net.cn/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Recent content in Categories on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>阿呆</copyright>
-        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>懒虫阿呆</copyright>
+        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>网站搭建</title>
-        <link>https://2060.net.cn/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
+        <link>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid>
+        <guid>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid>
         <description></description>
         </item>
         <item>
         <title>日常办公工具</title>
-        <link>https://2060.net.cn/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/</link>
+        <link>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/</link>
         <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/</guid>
+        <guid>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/</guid>
         <description></description>
         </item>
         <item>
         <title>服务器</title>
-        <link>https://2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>http://localhost:1313/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-        <description>&lt;img src="https://2060.net.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="Featured image of post 服务器" /&gt;</description>
+        <guid>http://localhost:1313/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="Featured image of post 服务器" /&gt;</description>
         </item>
         <item>
         <title>Python</title>
-        <link>https://2060.net.cn/categories/python/</link>
+        <link>http://localhost:1313/categories/python/</link>
         <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/python/</guid>
-        <description>&lt;img src="https://2060.net.cn/categories/python/image.png" alt="Featured image of post Python" /&gt;</description>
+        <guid>http://localhost:1313/categories/python/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/python/image.png" alt="Featured image of post Python" /&gt;</description>
         </item>
         <item>
         <title>应用类</title>
-        <link>https://2060.net.cn/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/</link>
+        <link>http://localhost:1313/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/</link>
         <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/</guid>
-        <description>&lt;img src="https://2060.net.cn/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97.png" alt="Featured image of post 应用类" /&gt;</description>
+        <guid>http://localhost:1313/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/%E5%BA%94%E7%94%A8%E7%B1%BB/%E8%B6%A3%E5%91%B3%E8%AF%86%E5%AD%97.png" alt="Featured image of post 应用类" /&gt;</description>
         </item>
         <item>
         <title>IP端口</title>
-        <link>https://2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/</link>
+        <link>http://localhost:1313/categories/ip%E7%AB%AF%E5%8F%A3/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/</guid>
-        <description>&lt;img src="https://2060.net.cn/categories/ip%E7%AB%AF%E5%8F%A3/IP%E7%AB%AF%E5%8F%A3.png" alt="Featured image of post IP端口" /&gt;</description>
+        <guid>http://localhost:1313/categories/ip%E7%AB%AF%E5%8F%A3/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/ip%E7%AB%AF%E5%8F%A3/IP%E7%AB%AF%E5%8F%A3.png" alt="Featured image of post IP端口" /&gt;</description>
         </item>
         <item>
         <title>个人网站搭建</title>
-        <link>https://2060.net.cn/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
+        <link>http://localhost:1313/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;img src="https://2060.net.cn/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/%E5%AE%98%E7%BD%91%E7%BD%91%E7%AB%99.png" alt="Featured image of post 个人网站搭建" /&gt;</description>
+        <guid>http://localhost:1313/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/%E5%AE%98%E7%BD%91%E7%BD%91%E7%AB%99.png" alt="Featured image of post 个人网站搭建" /&gt;</description>
         </item>
         
     </channel>
