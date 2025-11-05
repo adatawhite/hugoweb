@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on 阿呆报告</title>
-        <link>http://localhost:1313/categories/python/</link>
+        <link>https://2060.net.cn/categories/python/</link>
         <description>Recent content in Python on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>懒虫阿呆</copyright>
-        <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Anaconda安装说明</title>
-        <link>http://localhost:1313/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</link>
+        <link>https://2060.net.cn/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</link>
         <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</guid>
-        <description>&lt;img src="http://localhost:1313/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/image.png" alt="Featured image of post Anaconda安装说明" /&gt;&lt;h1 id=&#34;anaconda安装说明&#34;&gt;Anaconda安装说明
+        <guid>https://2060.net.cn/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</guid>
+        <description>&lt;img src="https://2060.net.cn/p/anaconda%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/image.png" alt="Featured image of post Anaconda安装说明" /&gt;&lt;h1 id=&#34;anaconda安装说明&#34;&gt;Anaconda安装说明
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;安装包已放在百度网盘：&lt;/strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1K3l7_G3eW8VhfvMRmIOeWQ?pwd=xrpy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;百度网盘&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;1双击打开已下载的anaconda文件根据提示点击next&#34;&gt;1、双击打开已下载的anaconda文件，根据提示点击“next”
