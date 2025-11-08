@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 阿呆报告</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://2060.net.cn/tags/</link>
         <description>Recent content in Tags on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>懒虫阿呆</copyright><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>懒虫阿呆</copyright><atom:link href="https://2060.net.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
