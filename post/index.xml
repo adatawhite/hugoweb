@@ -7,7 +7,299 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>懒虫阿呆</copyright>
+<<<<<<< Updated upstream
         <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+=======
+        <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Anaconda最小化打包exe环境及方案</title>
+        <link>https://2060.net.cn/p/exe%E6%89%93%E5%8C%85/</link>
+        <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://2060.net.cn/p/exe%E6%89%93%E5%8C%85/</guid>
+        <description>&lt;h1 id=&#34;anaconda最小化打包exe环境及方案&#34;&gt;Anaconda最小化打包exe环境及方案
+&lt;/h1&gt;&lt;h2 id=&#34;一最小化-anaconda-虚拟环境&#34;&gt;一、最小化 Anaconda 虚拟环境
+&lt;/h2&gt;&lt;h3 id=&#34;1-创建最简环境&#34;&gt;1️⃣ 创建最简环境
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda create -n pdf2word python=3.9 --no-default-packages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;--no-default-packages&lt;/code&gt; 能避免安装庞大的工具包（如 pip、setuptools 等默认依赖）。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;进入环境：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda activate pdf2word
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;2-仅安装必要依赖&#34;&gt;2️⃣ 仅安装必要依赖
+&lt;/h3&gt;&lt;p&gt;创建一个 &lt;code&gt;requirements.txt&lt;/code&gt;，&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdf2docx==0.5.6
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pymupdf==1.22.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后执行&lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-二打包成可执行文件推荐pyinstaller&#34;&gt;🧰 二、打包成可执行文件（推荐：PyInstaller）
+&lt;/h2&gt;&lt;h3 id=&#34;1-安装-pyinstaller&#34;&gt;1️⃣ 安装 PyInstaller
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pyinstaller
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;2-打包命令最小化体积&#34;&gt;2️⃣ 打包命令（最小化体积）
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller --onefile --noconsole --clean --strip your_script.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--onefile&lt;/code&gt;：打包成单个 exe 文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--noconsole&lt;/code&gt;：不弹出命令行窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--clean&lt;/code&gt;：清除缓存和临时文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--strip&lt;/code&gt;：剔除符号表、调试信息，显著缩小体积&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-得到的文件&#34;&gt;3️⃣ 得到的文件
+&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;dist/&lt;/code&gt; 目录中生成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dist/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; └─ your_script.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-三进一步瘦身技巧&#34;&gt;🧩 三、进一步瘦身技巧
+&lt;/h2&gt;&lt;h3 id=&#34;-可选移除不必要的依赖模块&#34;&gt;✅ （可选）移除不必要的依赖模块
+&lt;/h3&gt;&lt;p&gt;PyInstaller 默认会将 &lt;code&gt;pdf2docx&lt;/code&gt; 依赖的 &lt;code&gt;lxml&lt;/code&gt;、&lt;code&gt;PyQt5&lt;/code&gt;、&lt;code&gt;PyMuPDF&lt;/code&gt; 全打进去，但其实不需要全部。&lt;/p&gt;
+&lt;p&gt;你可以手动编辑生成的 &lt;code&gt;.spec&lt;/code&gt; 文件（在打包后生成），找到：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a = Analysis(
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [&amp;#39;your_script.py&amp;#39;],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    hiddenimports=[],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;添加：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;excludes=[&amp;#39;PyQt5&amp;#39;, &amp;#39;numpy&amp;#39;, &amp;#39;matplotlib&amp;#39;, &amp;#39;pandas&amp;#39;, &amp;#39;PIL&amp;#39;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后重新打包：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller your_script.spec --clean --strip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果打包后无法运行，检查排除的依赖包，是否有运行时需要的必备包也被排除掉了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-四用-upx-再压缩强烈推荐&#34;&gt;🪶 四、用 UPX 再压缩（强烈推荐）
+&lt;/h2&gt;&lt;p&gt;安装 UPX：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 版本下载：https://upx.github.io/&lt;/li&gt;
+&lt;li&gt;解压后将 &lt;code&gt;upx.exe&lt;/code&gt; 加入 PATH。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;然后执行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller --onefile --noconsole --clean --strip --upx-dir &amp;#34;C:\path\to\upx&amp;#34; your_script.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;⚡ UPX 通常能再压缩 50%～70% 的体积。
+实测：原始 60MB → UPX 压缩后 10MB 左右。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-五最终结果&#34;&gt;⚙️ 五、最终结果
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;优化方式&lt;/th&gt;
+          &lt;th&gt;打包后体积&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;默认打包&lt;/td&gt;
+          &lt;td&gt;~60MB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--strip&lt;/code&gt; + 精简依赖&lt;/td&gt;
+          &lt;td&gt;~25MB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;+ UPX 压缩&lt;/td&gt;
+          &lt;td&gt;✅ &lt;strong&gt;5–8MB&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;六给打包后的exe文件增加图标&#34;&gt;六、给打包后的exe文件增加图标
+&lt;/h3&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ICO 文件格式&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;必须是标准 &lt;code&gt;.ico&lt;/code&gt; 格式。&lt;/li&gt;
+&lt;li&gt;推荐大小：128×128 或 256×256 像素，包含多个尺寸（16×16、32×32、48×48、128×128），这样在不同缩放下都清晰。&lt;/li&gt;
+&lt;li&gt;将ico文件命名为app.ico，放在主目录下，如果脚本中存在图片调用，使用&amp;ndash;add-data添加图片，注意脚本中使用os和sys库调用图片位置，不然打包后可能会找不到图片。&lt;/li&gt;
+&lt;li&gt;使用以下命令进行打包：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pyinstaller&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clean&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;onefile&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;noconsole&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;icon&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ico&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;pic1.png;.&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;pic2.png;.&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PIL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PIL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_tkinter_finder&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PIL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PIL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ImageTk&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;^&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;batch_pdf_to_word&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>一键批量将pdf转word的免费工具</title>
+        <link>https://2060.net.cn/p/%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7/</link>
+        <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://2060.net.cn/p/%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7/</guid>
+        <description>&lt;h1 id=&#34;开箱即用一键批量将-pdf-转-word-的免费工具支持批量转换&#34;&gt;💡开箱即用！一键批量将 PDF 转 Word 的免费工具（支持批量转换）
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;📄 一次性批量把 PDF 文件转成 Word 文档，
+不限次数、不用登录、不收费，
+开箱即用，就是这么简单！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-为什么会做这个小工具&#34;&gt;✨ 为什么会做这个小工具
+&lt;/h2&gt;&lt;p&gt;在日常工作中，我们经常会遇到这样的烦恼👇&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;手里一堆 PDF 文件想修改，却发现只能一个个复制；&lt;/li&gt;
+&lt;li&gt;转换格式后排版全乱，修起来比重写还累；&lt;/li&gt;
+&lt;li&gt;网上找的工具要么限次数，要么要会员……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是我干脆自己写了一个：
+🎉 &lt;strong&gt;免费、离线、安全的 PDF 批量转 Word 工具！&lt;/strong&gt;
+双击就能用，无需安装复杂环境。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-功能介绍&#34;&gt;⚙️ 功能介绍
+&lt;/h2&gt;&lt;h3 id=&#34;-一键批量转换&#34;&gt;✅ 一键批量转换
+&lt;/h3&gt;&lt;p&gt;只需两步操作：
+1️⃣ 选择存放 &lt;strong&gt;PDF 文件的文件夹路径&lt;/strong&gt;；
+2️⃣ 设置转换后 &lt;strong&gt;Word 文件的保存路径&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;点击 &lt;strong&gt;“开始转换”&lt;/strong&gt; 按钮后，
+程序会自动帮你批量处理所有文件，
+几十上百个 PDF 也能一次搞定！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://2060.net.cn/p/%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7/pdf2word.png&#34;
+	width=&#34;594&#34;
+	height=&#34;636&#34;
+	srcset=&#34;https://2060.net.cn/p/%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7/pdf2word_hu_2fda90d9fa99da7e.png 480w, https://2060.net.cn/p/%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7/pdf2word_hu_324d215821d5f2b8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;pdf2word&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;93&#34;
+		data-flex-basis=&#34;224px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-实时进度--日志面板&#34;&gt;✅ 实时进度 &amp;amp; 日志面板
+&lt;/h3&gt;&lt;p&gt;不用盲等 ⏳
+每个文件的转换进度都有 &lt;strong&gt;进度条显示&lt;/strong&gt;，
+还配有 &lt;strong&gt;日志窗口&lt;/strong&gt;，实时记录转换状态。&lt;/p&gt;
+&lt;p&gt;转换完成后可查看全部日志，
+方便确认哪些文件已完成、哪些有问题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-纯本地运行数据更安全&#34;&gt;✅ 纯本地运行，数据更安全
+&lt;/h3&gt;&lt;p&gt;所有转换操作都在你自己的电脑中完成。
+📂 不联网、不上传、不存云端，
+无论是公司文件还是私人资料，都可放心使用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-使用方法&#34;&gt;🖥️ 使用方法
+&lt;/h2&gt;&lt;p&gt;下载完成后，直接双击运行程序👇&lt;/p&gt;
+&lt;p&gt;1️⃣ 在第一个输入框中选择 &lt;strong&gt;PDF 文件所在文件夹&lt;/strong&gt;
+2️⃣ 在第二个输入框中选择 &lt;strong&gt;Word 文件保存路径&lt;/strong&gt;
+3️⃣ 点击 &lt;strong&gt;“开始转换”&lt;/strong&gt;&lt;/p&gt;
+&lt;video controls width=&#34;640&#34;&gt;
+  &lt;source src=&#34;https://2060.net.cn/videos/pdf转word使用说明.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  您的浏览器不支持 video 标签。
+&lt;/video&gt;
+&lt;p&gt;然后你就可以去喝杯咖啡 ☕，
+程序会自动帮你搞定一切～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-免费使用但欢迎支持&#34;&gt;❤️ 免费使用，但欢迎支持
+&lt;/h2&gt;&lt;p&gt;这个工具完全免费使用！
+我希望它能真正帮大家提升效率。&lt;/p&gt;
+&lt;p&gt;如果你觉得好用，
+可以在程序界面上 &lt;strong&gt;扫码打赏&lt;/strong&gt; 支持一下我 🙏&lt;/p&gt;
+&lt;p&gt;☕ 一杯咖啡的鼓励，
+就是我继续优化、开发新功能的最大动力 ❤️&lt;/p&gt;
+&lt;p&gt;（此处可插入收款码图片）&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-获取方式&#34;&gt;📥 获取方式
+&lt;/h2&gt;&lt;p&gt;方式一（百度网盘链接）： &lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1QHBWGsw-fo455o5EF663ZA?pwd=nqbc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pan.baidu.com/s/1QHBWGsw-fo455o5EF663ZA?pwd=nqbc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;方式二：关注公众号【阿呆报告】后台获取。&lt;/p&gt;
+&lt;p&gt;📦 文件解压后直接运行，无需安装。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-一句话总结&#34;&gt;🏁 一句话总结
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;💬 这是一款真正 &lt;strong&gt;“开箱即用、批量高效、安全可靠”&lt;/strong&gt; 的 PDF 转 Word 工具。
+没有广告、没有限制，只为让你更高效！&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+>>>>>>> Stashed changes
         <title>Hugo页面底栏添加“网站运行时长”stack主题</title>
         <link>https://2060.net.cn/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/</link>
         <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
