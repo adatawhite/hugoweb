@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>网站搭建 on 阿呆报告</title>
-        <link>https://2060.net.cn/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
+        <link>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link>
         <description>Recent content in 网站搭建 on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>懒虫阿呆</copyright>
-        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo页面底栏添加“网站运行时长”stack主题</title>
-        <link>https://2060.net.cn/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/</link>
+        <link>http://localhost:1313/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/</link>
         <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/</guid>
+        <guid>http://localhost:1313/p/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/</guid>
         <description>&lt;p&gt;&lt;strong&gt;在 layouts/partials/footer/custom.html 里添加以下 JS 代码，其中 s1 是网站创建日期。代码参考自这里 ，加上了小时和分钟的计算。&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

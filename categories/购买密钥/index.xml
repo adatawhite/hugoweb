@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>购买密钥 on 阿呆报告</title>
-        <link>https://2060.net.cn/categories/%E8%B4%AD%E4%B9%B0%E5%AF%86%E9%92%A5/</link>
+        <link>http://localhost:1313/categories/%E8%B4%AD%E4%B9%B0%E5%AF%86%E9%92%A5/</link>
         <description>Recent content in 购买密钥 on 阿呆报告</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>懒虫阿呆</copyright>
-        <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/%E8%B4%AD%E4%B9%B0%E5%AF%86%E9%92%A5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%B4%AD%E4%B9%B0%E5%AF%86%E9%92%A5/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>密钥购买</title>
-        <link>https://2060.net.cn/p/buy_key/</link>
+        <link>http://localhost:1313/p/buy_key/</link>
         <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://2060.net.cn/p/buy_key/</guid>
+        <guid>http://localhost:1313/p/buy_key/</guid>
         <description>&lt;h2 id=&#34;购买密钥说明&#34;&gt;购买密钥说明
 &lt;/h2&gt;&lt;p&gt;免费密钥关注公众号后台，**输入“口令”**即可获取每日免费密钥，如需长期密钥，可按下方购买。&lt;/p&gt;
 &lt;img src=&#34;index.zh-cn.assets/image-20251204101805623.png&#34; alt=&#34;image-20251204101805623&#34; style=&#34;zoom: 67%;&#34; /&gt;
