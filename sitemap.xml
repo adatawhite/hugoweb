@@ -8,10 +8,31 @@
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2026-08-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/p/fenshijiajianfa-10yinei/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/tuiwei-jianfa-pingshifa-21ye/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/shuxue-meiri-yilian-60ye/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/p/cushi-poshi-pingshi-tujie/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/%E6%8B%BC%E9%9F%B3/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%95%B0%E7%8B%AC/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/shudu-rumen-lianxiti-sigong-200/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6%E5%90%AF%E8%92%99/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/</loc>
@@ -21,6 +42,12 @@
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/youxiao-xianjie-pinyin-meiri-daka/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/youxiao-xianjie-shuxue-lianxiti/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/youxiaoshuxue-meiri-yilian-4ye/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E6%8E%A7%E7%AC%94/</loc>
@@ -33,9 +60,6 @@
     <lastmod>2026-07-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E8%AF%86%E5%AD%97%E9%87%8F%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2026-07-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6%E5%90%AF%E8%92%99/</loc>
     <lastmod>2026-07-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/youxiao-xianjie-meiri-yilian/</loc>
