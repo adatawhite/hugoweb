@@ -1,86 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>薅羊毛 on 阿呆报告</title>
-        <link>http://localhost:1313/categories/%E8%96%85%E7%BE%8A%E6%AF%9B/</link>
-        <description>Recent content in 薅羊毛 on 阿呆报告</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>懒虫阿呆</copyright>
-        <lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%96%85%E7%BE%8A%E6%AF%9B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>千问请你喝奶茶</title>
-        <link>http://localhost:1313/p/%E5%8D%83%E9%97%AE%E7%BE%8A%E6%AF%9B/</link>
-        <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/p/%E5%8D%83%E9%97%AE%E7%BE%8A%E6%AF%9B/</guid>
-        <description>&lt;h1 id=&#34;薅羊毛--千问新用户红包&#34;&gt;薅羊毛 —— 千问新用户红包
-&lt;/h1&gt;&lt;h2 id=&#34;一活动要求&#34;&gt;一、活动要求：
-&lt;/h2&gt;&lt;p&gt;1、365天以上未在手机下载过千问，是千问新用户；&lt;/p&gt;
-&lt;p&gt;2、当天以及往后3-5天内，每天登陆基本都有一定额度的无门槛红包，可以直接买东西，基本上很多东西都能1分钱到手；&lt;/p&gt;
-&lt;p&gt;3、一个手机不可以登陆多个账号。&lt;/p&gt;
-&lt;h2 id=&#34;二参与方法&#34;&gt;二、参与方法
-&lt;/h2&gt;&lt;p&gt;复制下面口令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;一分购857
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;第一步：下载“千问”；&lt;/p&gt;
-&lt;p&gt;第二步：对话框输入口令领取专属红包；&lt;/p&gt;
-&lt;p&gt;第三步：用专属红包买一个你喜欢的东西，千问对话3次以上。&lt;/p&gt;
-&lt;h2 id=&#34;三注意事项&#34;&gt;三、注意事项
-&lt;/h2&gt;&lt;p&gt;由于千问系统兼容问题，鸿蒙手机使用红包是可能不太支持，安卓与苹果手机均正常。&lt;/p&gt;
-&lt;h2 id=&#34;四额外福利&#34;&gt;四、额外福利
-&lt;/h2&gt;&lt;p&gt;完成以上任务用户，如果同时未使用过百度网盘，可享受一个月百度网盘会员。&lt;/p&gt;
-&lt;p&gt;参与方法：&lt;/p&gt;
-&lt;p&gt;打开百度网盘，转存以下链接：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;通过网盘分享的文件：以客户为中心 .pdf
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;链接: https://pan.baidu.com/s/1m_A2vFbtP-SMM_pV26_iaQ?pwd=hyvd
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;或者直接扫码：&lt;/p&gt;
-&lt;img src=&#34;index.zh-cn.assets/image-20260509150357744.png&#34; alt=&#34;image-20260509150357744&#34; style=&#34;zoom: 25%;&#34; /&gt;
-</description>
-        </item>
-        <item>
-        <title>淘宝一分购活动参与方式</title>
-        <link>http://localhost:1313/p/%E4%B8%80%E5%88%86%E8%B4%AD/</link>
-        <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/p/%E4%B8%80%E5%88%86%E8%B4%AD/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E4%B8%80%E5%88%86%E8%B4%AD/image.png" alt="Featured image of post 淘宝一分购活动参与方式" /&gt;&lt;h1 id=&#34;淘宝一分购活动&#34;&gt;淘宝一分购活动
-&lt;/h1&gt;&lt;h2 id=&#34;一活动要求&#34;&gt;一、活动要求：
-&lt;/h2&gt;&lt;p&gt;1、365天以上未在手机淘宝APP下过单的用户，或者从未下载登陆过淘宝的用户；&lt;/p&gt;
-&lt;p&gt;2、当天以及往后3-5天内，每天登陆基本都有一定额度的无门槛红包，可以直接买东西，基本上很多东西都能1分钱到手；&lt;/p&gt;
-&lt;p&gt;3、一个手机不可以登陆多个账号。&lt;/p&gt;
-&lt;h2 id=&#34;二参与方法&#34;&gt;二、参与方法
-&lt;/h2&gt;&lt;p&gt;复制下面口令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;一分购857
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;打开淘宝，粘贴至搜索框进行搜索，选择你想要的1分钱产品下单即可，详细的操作视频如下：&lt;/p&gt;
-&lt;p&gt;百度网盘：https://pan.baidu.com/s/1PLO66DFWD-3X4r1m_M7yqA?pwd=fitp&lt;/p&gt;
-&lt;p&gt;夸克网盘：https://pan.quark.cn/s/a9be0e62b01e&lt;/p&gt;
-&lt;h2 id=&#34;三额外福利&#34;&gt;三、额外福利
-&lt;/h2&gt;&lt;p&gt;根据上述“参与方法”参与活动，进群额外得1元现金红包，并且可随时参与其他活动，活动一般都有红包。&lt;/p&gt;
-&lt;p&gt;将口令截图、订单截图发到群内，即可领取红包。&lt;/p&gt;
-&lt;img src=&#34;index.zh-cn.assets/ScreenShot_2026-04-15_213959_583.png&#34; alt=&#34;ScreenShot_2026-04-15_213959_583&#34; style=&#34;zoom:67%;&#34; /&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>薅羊毛 on 阿呆报告</title><link>https://2060.net.cn/categories/%E8%96%85%E7%BE%8A%E6%AF%9B/</link><description>Recent content in 薅羊毛 on 阿呆报告</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>懒虫阿呆</copyright><lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://2060.net.cn/categories/%E8%96%85%E7%BE%8A%E6%AF%9B/index.xml" rel="self" type="application/rss+xml"/><item><title>千问请你喝奶茶</title><link>https://2060.net.cn/p/%E5%8D%83%E9%97%AE%E7%BE%8A%E6%AF%9B/</link><pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate><guid>https://2060.net.cn/p/%E5%8D%83%E9%97%AE%E7%BE%8A%E6%AF%9B/</guid><description>&lt;h1 id="薅羊毛--千问新用户红包">薅羊毛 —— 千问新用户红包
+&lt;/h1>&lt;h2 id="一活动要求">一、活动要求：
+&lt;/h2>&lt;p>1、365天以上未在手机下载过千问，是千问新用户；&lt;/p>
+&lt;p>2、当天以及往后3-5天内，每天登陆基本都有一定额度的无门槛红包，可以直接买东西，基本上很多东西都能1分钱到手；&lt;/p>
+&lt;p>3、一个手机不可以登陆多个账号。&lt;/p>
+&lt;h2 id="二参与方法">二、参与方法
+&lt;/h2>&lt;p>复制下面口令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">一分购857
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>第一步：下载“千问”；&lt;/p>
+&lt;p>第二步：对话框输入口令领取专属红包；&lt;/p>
+&lt;p>第三步：用专属红包买一个你喜欢的东西，千问对话3次以上。&lt;/p>
+&lt;h2 id="三注意事项">三、注意事项
+&lt;/h2>&lt;p>由于千问系统兼容问题，鸿蒙手机使用红包是可能不太支持，安卓与苹果手机均正常。&lt;/p>
+&lt;h2 id="四额外福利">四、额外福利
+&lt;/h2>&lt;p>完成以上任务用户，如果同时未使用过百度网盘，可享受一个月百度网盘会员。&lt;/p>
+&lt;p>参与方法：&lt;/p>
+&lt;p>打开百度网盘，转存以下链接：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">通过网盘分享的文件：以客户为中心 .pdf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">链接: https://pan.baidu.com/s/1m_A2vFbtP-SMM_pV26_iaQ?pwd=hyvd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>或者直接扫码：&lt;/p>
+&lt;img src="index.zh-cn.assets/image-20260509150357744.png" alt="image-20260509150357744" style="zoom: 25%;" /></description></item><item><title>淘宝一分购活动参与方式</title><link>https://2060.net.cn/p/%E4%B8%80%E5%88%86%E8%B4%AD/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://2060.net.cn/p/%E4%B8%80%E5%88%86%E8%B4%AD/</guid><description>&lt;img src="https://2060.net.cn/p/%E4%B8%80%E5%88%86%E8%B4%AD/image.png" alt="Featured image of post 淘宝一分购活动参与方式" />&lt;h1 id="淘宝一分购活动">淘宝一分购活动
+&lt;/h1>&lt;h2 id="一活动要求">一、活动要求：
+&lt;/h2>&lt;p>1、365天以上未在手机淘宝APP下过单的用户，或者从未下载登陆过淘宝的用户；&lt;/p>
+&lt;p>2、当天以及往后3-5天内，每天登陆基本都有一定额度的无门槛红包，可以直接买东西，基本上很多东西都能1分钱到手；&lt;/p>
+&lt;p>3、一个手机不可以登陆多个账号。&lt;/p>
+&lt;h2 id="二参与方法">二、参与方法
+&lt;/h2>&lt;p>复制下面口令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">一分购857
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>打开淘宝，粘贴至搜索框进行搜索，选择你想要的1分钱产品下单即可，详细的操作视频如下：&lt;/p>
+&lt;p>百度网盘：https://pan.baidu.com/s/1PLO66DFWD-3X4r1m_M7yqA?pwd=fitp&lt;/p>
+&lt;p>夸克网盘：https://pan.quark.cn/s/a9be0e62b01e&lt;/p>
+&lt;h2 id="三额外福利">三、额外福利
+&lt;/h2>&lt;p>根据上述“参与方法”参与活动，进群额外得1元现金红包，并且可随时参与其他活动，活动一般都有红包。&lt;/p>
+&lt;p>将口令截图、订单截图发到群内，即可领取红包。&lt;/p>
+&lt;img src="index.zh-cn.assets/ScreenShot_2026-04-15_213959_583.png" alt="ScreenShot_2026-04-15_213959_583" style="zoom:67%;" /></description></item></channel></rss>
