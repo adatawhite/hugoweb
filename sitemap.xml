@@ -8,6 +8,21 @@
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2026-08-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E7%AC%94%E7%94%BB/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E5%B9%BC%E5%B0%8F%E8%A1%94%E6%8E%A5/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/youxiao-xianjie-bihua-bushou-miaohong/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/p/fenshijiajianfa-10yinei/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -15,9 +30,6 @@
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/shuxue-meiri-yilian-60ye/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/cushi-poshi-pingshi-tujie/</loc>
@@ -33,12 +45,6 @@
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6%E5%90%AF%E8%92%99/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%B9%BC%E5%B0%8F%E8%A1%94%E6%8E%A5/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/youxiao-xianjie-pinyin-meiri-daka/</loc>
